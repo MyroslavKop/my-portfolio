@@ -1,0 +1,25 @@
+@import "../../../../scss/index";
+
+
+.ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 35px;
+  @include md {
+    margin-top: 15px;
+  }
+}
+.li {
+  max-height: 60px;
+  max-width: 60px;
+}
+.svg {
+  color: $text-color-white;
+  &:hover {
+    color: $text-color-main;
+    transition: 0.25s;
+    cursor: pointer;
+  }
+}

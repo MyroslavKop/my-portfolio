@@ -1,0 +1,8 @@
+@import "../../scss/variables";
+@import "../../scss/mixins-media";
+.main {
+  padding: 0 150px;
+  @include md {
+    padding: 0 20px;
+  }
+}
