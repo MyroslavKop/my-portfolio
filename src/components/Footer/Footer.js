@@ -9,7 +9,7 @@ const Footer = () => {
         target="_blank"
         rel="noreferrer"
       >
-        Designed & Built by Myroslav Kopytov
+        Built by Myroslav Kopytov
       </a>
     </footer>
   );

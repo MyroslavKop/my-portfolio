@@ -39,11 +39,8 @@ const About = () => {
         </motion.h2>
         <div className={styles.text_block}>
           <motion.p custom={5} variants={basicAnimation}>
-            I am a beginner frontend developer from Odessa, Ukraine. I am
-            looking for a team where I can show my creativity and potential. On
-            this page you can find more information about my works and tech
-            stacks. Also i will update it as fast as i&apos;ll creat a new
-            sites.
+            I am a beginner frontend developer from Odessa, Ukraine. On this
+            page you can find more information about my works and tech stacks.
           </motion.p>
         </div>
         <MLinkButton
