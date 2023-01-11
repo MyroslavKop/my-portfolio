@@ -8,37 +8,45 @@ import git from "../../../img/icons/git.svg";
 import sass from "../../../img/icons/sass.svg";
 
 const icons = [
-    {
-        id: 1,
-        icon: js
-    },
-    {
-        id: 2,
-        icon: html
-    },
-    {
-        id: 3,
-        icon: react
-    },
-    {
-        id: 4,
-        icon: ts,
-    },
-    {
-        id: 5,
-        icon: css
-    },
-    {
-        id: 6,
-        icon: redux
-    },
-    {
-        id: 7,
-        icon: git
-    },
-    {
-        id: 8,
-        icon: sass
-    },
+  {
+    id: 1,
+    icon: js,
+    description: "js icon",
+  },
+  {
+    id: 2,
+    icon: html,
+    description: "html icon",
+  },
+  {
+    id: 3,
+    icon: react,
+    description: "react icon",
+  },
+  {
+    id: 4,
+    icon: ts,
+    description: "typescript icon",
+  },
+  {
+    id: 5,
+    icon: css,
+    description: "css icon",
+  },
+  {
+    id: 6,
+    icon: redux,
+    description: "redux icon",
+  },
+  {
+    id: 7,
+    icon: git,
+    description: "git icon",
+  },
+  {
+    id: 8,
+    icon: sass,
+    description: "sass icon",
+  },
 ];
 export default icons;

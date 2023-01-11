@@ -1,0 +1,63 @@
+@import "src/scss/index";
+
+.project {
+  @extend %flex-column;
+  max-width: 370px;
+  border-radius: 15px;
+  background-color: $background-color-secondary;
+  justify-content: space-between;
+
+  .image {
+    height: 200px;
+
+    img {
+      border-radius: 15px 15px 0 0;
+    }
+  }
+
+  .title {
+    color: $text-color-main;
+    font-size: 28px;
+    line-height: 26px;
+    padding: 25px 25px 0;
+    @include sm {
+      font-size: 24px;
+    }
+  }
+
+  .description {
+    font-size: 16px;
+    line-height: 25px;
+    margin-top: 10px;
+    padding: 0 25px;
+  }
+
+  .lists {
+    padding: 0 25px 25px;
+
+    .tech_list {
+      display: flex;
+      gap: 10px;
+      font-family: $secondary-font;
+      color: $text-color-main;
+    }
+
+    .links_list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0;
+
+      .link {
+        position: relative;
+        @extend %underline;
+      }
+
+      .svg {
+        &:hover {
+          color: $text-color-main;
+        }
+      }
+    }
+  }
+}

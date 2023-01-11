@@ -1,0 +1,21 @@
+@import "src/scss/index";
+
+.a {
+  padding: 10px 32px;
+  font-size: 20px;
+  color: $text-color-white;
+  background-color: $text-color-main;
+  font-family: $secondary-font;
+  display: inline-block;
+  width: 190px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 4px 21px 0 rgba(0, 189, 149, 1);
+  -moz-box-shadow: 0 4px 21px 0 rgba(0, 189, 149, 1);
+  box-shadow: 0 4px 21px 0 rgba(0, 189, 149, 1);
+
+  &:hover {
+    box-shadow: none;
+    transition: 0.25s;
+    cursor: pointer;
+  }
+}

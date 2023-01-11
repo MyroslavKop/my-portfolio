@@ -1,37 +1,24 @@
+import { motion } from "framer-motion";
 import styles from "./Navbar.module.scss";
-import icon from "../../../img/icons/man-svgrepo-com.svg";
-import {Link} from "react-scroll";
-import Hamburger from "hamburger-react";
-import {useState} from "react";
+import logo from "../../../img/icons/logo.jpg";
+import Desktop from "./Desktop/Desktop";
+import Mobile from "./Mobile/Mobile";
 
 const Navbar = () => {
-    const [open, setOpen] = useState(false);
-    const handleClick = () => {
-        setOpen(!open);
-    };
-    return (
-        <nav className={styles.nav}>
-            <div className={styles.imgBlock}><img className={styles.img} src={icon}/></div>
-            <ul className={styles.ul}>
-                <li><Link to="about" spy={true} smooth={true} offset={50} duration={500}>About me</Link></li>
-                <li><Link to="skills" spy={true} smooth={true} offset={50} duration={500}>Skills</Link></li>
-                <li><Link to="works" spy={true} smooth={true} offset={50} duration={500}>My works</Link></li>
-            </ul>
-            <div className={styles.div2}>
-                <Hamburger onToggle={handleClick}/>
-                {open &&
-                    <div className={styles.div3}>
-                        <nav className={styles.nav2}>
-                            <ul>
-                                <li><Link to="about" spy={true} smooth={true} offset={50} duration={500}>About me</Link></li>
-                                <li><Link to="skills" spy={true} smooth={true} offset={50} duration={500}>Skills</Link></li>
-                                <li><Link to="works" spy={true} smooth={true} offset={50} duration={500}>My works</Link></li>
-                            </ul>
-                        </nav>
-                    </div>}
-            </div>
-        </nav>
-    );
+  return (
+    <motion.nav
+      className={styles.navbar}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+    >
+      <div className={styles.image}>
+        <img src={logo} alt="logo" />
+      </div>
+      <Desktop />
+      <Mobile />
+    </motion.nav>
+  );
 };
 
 export default Navbar;

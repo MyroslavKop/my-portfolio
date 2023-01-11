@@ -1,0 +1,52 @@
+@import "src/scss/index";
+
+.mobile {
+  position: relative;
+  bottom: 25px;
+}
+
+.mobile_list {
+  display: none;
+  @include xs {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    right: -100%;
+    top: 0;
+    font-size: 20px;
+    width: min(55vw, 400px);
+    height: 100vh;
+    gap: 50px;
+    z-index: 10;
+    background-color: #13191c;
+    transition: right 1s;
+    margin: 0;
+    box-shadow: -10px 0px 30px -15px black;
+    li {
+      cursor: pointer;
+      position: relative;
+
+      &:hover {
+        color: $text-color-main;
+      }
+    }
+  }
+}
+
+.active {
+  right: 0;
+}
+
+.hamburger {
+  display: none;
+  @include sm {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 20;
+  }
+}
