@@ -67,6 +67,10 @@
   @include md-min {
     order: 1;
   }
+  @include xs {
+    max-width: 200px;
+    max-height: 200px;
+  }
 
   img {
     border-radius: 50%;
