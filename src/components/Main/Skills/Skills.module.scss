@@ -26,13 +26,8 @@
     gap: 60px;
     @include md {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      gap: 10px;
-    }
-    @include xs {
-      display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      gap: 5px;
+      gap: 15px;
     }
 
     .image {

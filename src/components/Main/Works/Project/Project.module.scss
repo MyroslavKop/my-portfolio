@@ -37,6 +37,7 @@
 
     .tech_list {
       display: flex;
+      flex-wrap: wrap;
       gap: 10px;
       font-family: $secondary-font;
       color: $text-color-main;

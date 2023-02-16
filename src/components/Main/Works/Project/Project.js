@@ -20,11 +20,13 @@ const Project = forwardRef(
           ))}
         </ul>
         <ul className={styles.links_list}>
-          <li className={styles.link}>
-            <a href={preview} target="_blank" rel="noreferrer">
-              Live preview
-            </a>
-          </li>
+          {preview !== undefined ? (
+            <li className={styles.link}>
+              <a href={preview} target="_blank" rel="noreferrer">
+                Live preview
+              </a>
+            </li>
+          ) : null}
           <li>
             <a href={github} target="_blank" rel="noreferrer">
               <svg
@@ -49,7 +51,7 @@ Project.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   img: PropTypes.node.isRequired,
-  preview: PropTypes.string.isRequired,
+  preview: PropTypes.string,
   github: PropTypes.string.isRequired,
   tech: PropTypes.arrayOf(PropTypes.string).isRequired,
 };

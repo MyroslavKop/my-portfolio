@@ -3,8 +3,8 @@ import styles from "./About.module.scss";
 import { basicAnimation } from "../../../animations";
 import MLinkButton from "../../LinkButton/LinkButton";
 import MLinks from "./Links/Links";
-import photo from "../../../img/my-photo.png";
-import CV from "../../../pdf/CV_FrontEnd_Myroslav Kopytov.pdf";
+import photo from "../../../assets/img/my-photo.png";
+import CV from "../../../assets/pdf/CV_FrontEnd_Myroslav Kopytov.pdf";
 
 const About = () => {
   return (

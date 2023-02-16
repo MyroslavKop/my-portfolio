@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import styles from "./Navbar.module.scss";
-import logo from "../../../img/icons/logo.svg";
+import logo from "../../../assets/img/icons/logo.svg";
 import Desktop from "./Desktop/Desktop";
 import Mobile from "./Mobile/Mobile";
 
