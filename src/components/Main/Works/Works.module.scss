@@ -27,9 +27,13 @@
 .projects {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 40px;
   justify-items: center;
+  @include md-min {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
   @include sm {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 }

@@ -22,6 +22,7 @@
   .block {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     justify-items: center;
     gap: 60px;
     @include md {
